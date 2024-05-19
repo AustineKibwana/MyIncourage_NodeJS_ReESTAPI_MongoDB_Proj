@@ -8,15 +8,16 @@ const productRoutes = require("./api/routes/products");
 const orderRoutes = require("./api/routes/orders");
 const userRoutes = require('./api/routes/user');
 
+mongoose.Promise = global.Promise;
+
 mongoose.connect(
- 'mongodb://mwasi:Mwashighadi@2024@cluster0-shard-00-00-s0lne.mongodb.net:27017,cluster0-shard-00-01-s0lne.mongodb.net:27017,cluster0-shard-00-02-s0lne.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', {
+ 'mongodb://mwasi:Mwashighadi@0224>@clusterincourage.rtwerlc.mongodb.net/', {
   useMongoClient: true}).then(result =>{
      console.log("Success")
   }).catch(err =>{
     console.log("Failed")
   });
 
-mongoose.Promise = global.Promise;
 
 app.use(morgan("dev"));
 app.use('/uploads', express.static('uploads'));

@@ -11,12 +11,13 @@ const userRoutes = require('./api/routes/user');
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
- 'mongodb://mwasi:Mwashighadi@0224>@clusterincourage.rtwerlc.mongodb.net/', {
+ 'mongodb+srv://mwasi:mWASHIGHADI@2024@clusterincourage.rtwerlc.mongodb.net/?retryWrites=true&w=majority&appName=Application0', {
   useMongoClient: true}).then(result =>{
      console.log("Success")
   }).catch(err =>{
-    console.log("Failed")
+    console.log("Mau")
   });
+
 
 
 app.use(morgan("dev"));

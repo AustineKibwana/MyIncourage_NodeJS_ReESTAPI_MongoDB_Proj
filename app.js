@@ -12,15 +12,7 @@ mongoose.Promise = global.Promise;
 
  //'mongodb://mwasi:Mwashighadi@2024@cluster0-shard-00-00-s0lne.mongodb.net:27017,cluster0-shard-00-01-s0lne.mongodb.net:27017,cluster0-shard-00-02-s0lne.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
   
-mongoose.connect(
-  'mongodb+srv://mwasi:Mwashighadi@2024@clusterincourage.rtwerlc.mongodb.net/?retryWrites=true&w=majority&appName=ClusterIncourage', {
-  useMongoClient: true}).then(result =>{
-     console.log("Mau_Success")
-  }).catch(err =>{
-    console.log("Mau_Failed")
-  });
-
-
+mongoose.connect('mongodb+srv://austinemwasi40:VeJ2jetwgFBcP4ny@incouragelimited.kzvfxsy.mongodb.net/?retryWrites=true&w=majority&appName=IncourageLimited');
 
 app.use(morgan("dev"));
 app.use('/uploads', express.static('uploads'));
